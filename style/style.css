@@ -1,0 +1,24 @@
+/*this is done to align all the chart and the text at center*/
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+/*this is done to get some space/margin in top and bottom of search bar
+  20px top and bottom and 0px left and right*/
+.input-group {
+  margin: 20px 0px;
+}
+
+/*to get charts of same size*/
+svg {
+  height: 150px;
+}
+
+/* it means find the 1st td in the each row and also the the child div of 1st td
+which is google map and set height and width
+bcoz google map don't know what size of map to display */
+td:first-of-type, td:first-of-type > div {
+  height: 180px;
+  width: 250px;
+}
